@@ -11,6 +11,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # add nginx repository
+RUN apt-get install -y python-software-properties
+RUN apt-get update
 RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get update
 
